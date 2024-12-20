@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Javascript - Events</title>
+</head>
+<body>
+    
+    <header>
+        <h1 id="game-title">
+            Adventure Game
+        </h1>
+        <h2 id="round-counter"></h2>
+    </header>
+
+    <main>
+
+        <section class="section" id="game-event-log">
+            <h3 class="subtitle" id="event-log-title">Event Log</h3>
+            <div id="event-log-container"></div>
+        </section>
+
+        <section class="section" id="character-containers">
+            <div class="character-container gameStateOff" id="player-container">
+                <h3 class="character-name" id="player-name"></h3>
+                <div class="character-stats-container">
+                    <h5 class="character-victories" id="player-victories"></h5>
+                    <p class="character-initiative" id="player-initiative"></p>
+                    <p class="character-health" id="player-health"></p>
+                    <p class="character-attack-power" id="player-attack"></p>
+                    <p class="character-defense" id="player-defense"></p>
+                </div>
+            </div>
+
+            <div class="character-container gameStateOff" id="monster-container">    
+                <h3 class="character-name" id="enemy-name"></h3>
+                <div class="character-stats-container">
+                    <h5 class="character-victories" id="enemy-victories"></h5>
+                    <p class="character-initiative" id="enemy-initiative"></p>
+                    <p class="character-health" id="enemy-health"></p>
+                    <p class="character-attack-power" id="enemy-attack"></p>
+                    <p class="character-defense" id="enemy-defense"></p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="game-menu-container">
+            <div class="button-container" id="player-button-container">
+                <button class="player-action-button" id="player-attack-button">ATTACK</button>
+                <button class="player-action-button" id="player-heal-button">HEAL</button>
+            </div>
+            <div class="button-container" id="main-menu-container">
+                <button class="menu-button" id="start-game-button">START GAME</button>
+                <button class="menu-button" id="reset-game-button">RESET</button>
+                <button class="menu-button" id="end-game-button">END GAME</button>
+            </div>
+        </section>
+
+    </main>
+</body>
+</html>
